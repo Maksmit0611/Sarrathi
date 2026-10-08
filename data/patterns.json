@@ -1,0 +1,148 @@
+{
+  "_meta": {
+    "purpose": "Business-model archetypes with notes on where each has actually worked and why. Used by the agent to match an idea to a model that fits the culture and resource level.",
+    "warning": "Archetypes are priors, not rules. Use them to generate tests, never as conclusions."
+  },
+  "patterns": [
+    {
+      "id": "trust-rail-first",
+      "name": "Build the trust rail first",
+      "essence": "In markets with low institutional trust, whoever builds escrow, verified reviews, guaranteed refunds or certified identity owns the market.",
+      "worked_where": ["Alipay + Wangwang in China (eBay lacked it)", "M-Pesa agent networks in Kenya", "Grameen social collateral in Bangladesh", "Marketplace escrow across Southeast Asia"],
+      "failed_where": ["eBay China - listed fees without solving trust", "US-imported 'anonymous' transaction models in cash economies"],
+      "signals_you_need_it": ["Target market scores high on uncertainty avoidance", "Cash-on-delivery or cash-first payments are normal", "Formal contracts are weakly enforced", "Customers ask 'who are you?' before 'how much?'"],
+      "resource_level": "medium",
+      "first_test": "Run 10 transactions manually with a human guarantee and see if strangers will pay."
+    },
+    {
+      "id": "formalise-informal",
+      "name": "Formalise what already exists informally",
+      "essence": "Do not create new supply or new behaviour - organise existing informal supply (drivers, home cooks, tailors, tutors) and give it identity, payments and demand.",
+      "worked_where": ["Gojek (ojek bikers)", "Grab (taxi drivers)", "Uber (black cabs logic)", "Zomato/Swiggy (restaurants)", "Urban Company in India (home services)"],
+      "failed_where": ["Platforms that demanded exclusivity or asset purchase from informal workers", "Models requiring workers to buy equipment upfront"],
+      "signals_you_need_it": ["Large informal sector in target market", "Existing work happening off-books", "No formal credit or identity for those workers"],
+      "resource_level": "low-to-medium",
+      "first_test": "Recruit 20 existing informal providers and give them a simple booking channel. Do they bring their own customers?"
+    },
+    {
+      "id": "razor-blade",
+      "name": "Razor-blade / consumables annuity",
+      "essence": "Sell the durable asset cheaply (or at cost) and make money on recurring consumables.",
+      "worked_where": ["Printers, coffee capsules, M-Pesa agent float, Apple's app+services ecosystem, subscription supplements in the US", "Kodak film for decades"],
+      "failed_where": ["Juicero (workaround existed)", "Pets.com (delivery cost exceeded recurring margin)", "Products where the customer can substitute a generic consumable easily"],
+      "signals_you_need_it": ["You can lock the consumable (format, licence, chemistry)", "The customer uses the product repeatedly and predictably", "Shipping cost per consumable is low relative to margin"],
+      "resource_level": "medium-to-high",
+      "first_test": "Check whether a 3rd-party consumable already exists on Amazon/Shopee for your category. If yes, your lock-in is imaginary."
+    },
+    {
+      "id": "social-collateral",
+      "name": "Social collateral instead of financial collateral",
+      "essence": "Use group guarantee, community reputation and peer accountability where people have no credit history or assets.",
+      "worked_where": ["Grameen Bank and microfinance in Bangladesh/India", "Rotating savings associations (chit funds, chama, susu, biao hui)", "Chinese and Jewish diaspora trade networks"],
+      "failed_where": ["Commercialised microfinance without the community layer - led to over-indebtedness", "Group models in anonymous urban settings with no social ties"],
+      "signals_you_need_it": ["No formal credit bureau coverage", "Strong existing group structures (village, church, clan, immigrant community)", "Trust is personal, not institutional"],
+      "resource_level": "low",
+      "first_test": "Ask 5 people in the target community who they would trust to vouch for a stranger's repayment."
+    },
+    {
+      "id": "local-champion",
+      "name": "Local champion against a global giant",
+      "essence": "Beat an incoming global brand on local taste, density, price point and relationships before it localises.",
+      "worked_where": ["Jollibee vs McDonald's Philippines", "Taobao vs eBay", "Didi vs Uber", "Grab vs Uber in SEA", "Local banks vs global banks in Africa/Middle East"],
+      "failed_where": ["Mimicking the global player's positioning instead of owning the local one", "Local champions that lost the price war to subsidised entrants"],
+      "signals_you_need_it": ["A global player is entering or eyeing your market", "Your product has a culturally specific taste/format that the giant's global SKU cannot match", "You can add store density or delivery density faster than they can"],
+      "resource_level": "low-to-medium",
+      "first_test": "Find the one thing your local market prefers that the global playbook would never authorise. Build that only."
+    },
+    {
+      "id": "long-tail-tools",
+      "name": "Serve the long tail the giants ignore",
+      "essence": "Global platforms serve the head of the market (big brands, big merchants, big enterprise). Serving the millions of tiny operators is a durable business.",
+      "worked_where": ["Shopify vs Amazon merchants", "Canva vs Adobe", "Zapier", "Mailchimp, Xero in ANZ", "WhatsApp-based SMB tools in India/Brazil"],
+      "failed_where": ["Chasing the tail with an enterprise cost structure", "Underestimating support cost per tiny customer"],
+      "signals_you_need_it": ["Huge number of self-employed/micro businesses in your target market", "Incumbents priced for enterprises", "Distribution can happen online or through community channels"],
+      "resource_level": "low",
+      "first_test": "Can you acquire 100 tiny customers with zero sales headcount? If not, the tail model will not work for you yet."
+    },
+    {
+      "id": "cluster-network",
+      "name": "Cluster / network-based production",
+      "essence": "Use many small specialised players linked by trust instead of one big vertically integrated factory.",
+      "worked_where": ["Italian industrial districts (tiles, textiles, eyewear)", "Wenzhou and Guangdong manufacturing clusters", "Indian textile and jewellery clusters in Surat, Tiruppur", "Amul cooperative dairy network"],
+      "failed_where": ["When competition shifts to scale, brand and capex-heavy technology", "When the cluster cannot solve succession or marketing"],
+      "signals_you_need_it": ["You are in a craft or high-mix manufacturing category", "Many small suppliers already exist locally", "Speed-to-design matters more than unit cost"],
+      "resource_level": "low-to-medium",
+      "first_test": "Map 10 suppliers in your target cluster and see if you can assemble the full chain without owning any of it."
+    },
+    {
+      "id": "family-firm-scale",
+      "name": "Family-firm and relationship contracting",
+      "essence": "Long-term personal relationships replace legal contracts; reputation across generations is the enforcement mechanism.",
+      "worked_where": ["Italian fashion and machinery SMEs", "Japanese keiretsu supplier chains", "Indian family conglomerates (Tata, Birla, Godrej)", "Gulf family trading houses", "Korean chaebol"],
+      "failed_where": ["Outsiders trying to transact with family networks on price alone", "Any model requiring rapid hostile restructuring"],
+      "signals_you_need_it": ["High power distance + collectivism in the target market", "Supplier relationships are decades long", "Price alone does not win the deal"],
+      "resource_level": "medium",
+      "first_test": "Ask whether you can name the actual decision-maker's family or community connection before pitching. If not, your sales cycle is not ready."
+    },
+    {
+      "id": "leapfrog",
+      "name": "Leapfrog the missing infrastructure",
+      "essence": "When a market skipped a technology generation, design for the state it is actually in - mobile-only, cash-and-mobile-money, offline-first - rather than assuming the rich-world stack.",
+      "worked_where": ["M-Pesa (no card infrastructure needed)", "WhatsApp commerce in Brazil and India", "Mobile-first e-commerce in Indonesia and Africa", "USSD/SMS products for feature phones"],
+      "failed_where": ["Products requiring desktop, card payment or stable broadband", "Apps assuming English literacy"],
+      "signals_you_need_it": ["Low card penetration, high mobile penetration", "Poor fixed-line or logistics infrastructure", "'Legacy-free' market that never had the previous generation"],
+      "resource_level": "low-to-medium",
+      "first_test": "Can your product complete its core task on a $60 Android phone with 2GB RAM, spotty 3G and cash? If not, redesign."
+    },
+    {
+      "id": "community-commerce",
+      "name": "Community and social-commerce distribution",
+      "essence": "Sell through trusted community members (resellers, agents, community leaders, group chats) instead of mass advertising.",
+      "worked_where": ["Avon, Amway and Tupperware globally", "Indian self-help-group women's reseller networks", "WeChat group commerce and buying agents", "Livestream selling in China", "Neighbourhood buying in Latin America"],
+      "failed_where": ["Pyramid structures that consume the reseller's own social capital", "When inventory risk is pushed onto the reseller"],
+      "signals_you_need_it": ["High collectivism and dense social networks", "Advertising trust is low, word-of-mouth trust is high", "Sparse retail coverage in the target geography"],
+      "resource_level": "low",
+      "first_test": "Give 10 community members a product to sell to their own group. Measure re-order within 30 days."
+    },
+    {
+      "id": "asset-light-arbitrage",
+      "name": "Asset-light supply arbitrage",
+      "essence": "Aggregate other people's assets or idle capacity instead of buying your own.",
+      "worked_where": ["Airbnb, Uber, Instacart vs Webvan's warehouses", "Cloud kitchens in India and SEA", "Shopify vs building retail"],
+      "failed_where": ["WeWork (long leases = assets on balance sheet anyway)", "Marketplaces where quality control becomes impossible without ownership"],
+      "signals_you_need_it": ["Idle capacity exists and is easy to enumerate", "Quality can be standardised through process rather than ownership", "Capital is expensive to you"],
+      "resource_level": "low",
+      "first_test": "Can you fulfil your first 20 orders without owning anything? If yes, stay asset-light until density forces otherwise."
+    },
+    {
+      "id": "regulated-first",
+      "name": "Regulated-first market entry",
+      "essence": "In high-uncertainty-avoidance markets, certification, licensing and compliance are marketing assets, not costs.",
+      "worked_where": ["German Mittelstand B2B and certification culture", "Singapore as a compliance-friendly test-bed", "Halal certification as a market-access unlock across SEA, Gulf and Muslim markets", "Organic/fair-trade certification in EU retail"],
+      "failed_where": ["Ignoring local licensing until after launch", "Assuming a licence in one jurisdiction works in another"],
+      "signals_you_need_it": ["Target market scores high on uncertainty avoidance", "Heavy product regulation (food, health, finance, children's products)", "Religious or cultural certification requirements"],
+      "resource_level": "medium",
+      "first_test": "List every licence/certification required and estimate the cost and time before building anything."
+    },
+    {
+      "id": "localise-menu-not-brand",
+      "name": "Localise the menu, keep the brand",
+      "essence": "The brand can travel; the recipe, price point and packaging must be rebuilt per market.",
+      "worked_where": ["KFC in China", "Domino's in India", "McDonald's McSpicy in Asia", "Coca-Cola keeping Thums Up in India", "IKEA's India sourcing and pricing"],
+      "failed_where": ["Walmart in Germany (operating norms, not menu)", "Global retailers assuming pricing power travels", "Brands that killed acquired local favourites"],
+      "signals_you_need_it": ["Food, beverage, retail or consumer packaged goods", "Your home market is not your target market", "Religious, dietary or taste norms differ"],
+      "resource_level": "medium",
+      "first_test": "Take your top 3 products to 20 local consumers and ask which one they would replace an existing habit with. If none, rebuild the lineup."
+    },
+    {
+      "id": "patient-capital",
+      "name": "Patient capital / long-horizon structures",
+      "essence": "Structures that let you hold assets and relationships through cycles beat structures forced to exit quarterly.",
+      "worked_where": ["Berkshire insurance float", "Japanese keiretsu cross-shareholdings", "Tata trust ownership", "Family offices in Italy and the Gulf", "German Mittelstand, bank-financed"],
+      "failed_where": ["Patient capital becomes complacent capital", "Structures with no external discipline drift into bad investments"],
+      "signals_you_need_it": ["Your market has decade-long payback cycles (infrastructure, manufacturing, brand building)", "Public markets would punish your investment schedule", "You can access capital not subject to quarterly redemption"],
+      "resource_level": "high",
+      "first_test": "Work out what your idea looks like if it takes 7 years. If it only works in 18 months, your capital structure is your real constraint."
+    }
+  ]
+}

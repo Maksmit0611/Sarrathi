@@ -1,0 +1,47 @@
+# --- secrets ---
+.env
+*.env
+!.env.example
+
+# --- python ---
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+
+# --- data you generate locally ---
+data/my_corpus.jsonl
+data/*.db
+data/*.sqlite
+data/chroma/
+data/vectorstore/
+
+# --- reports you generate locally ---
+report.md
+reports/
+*.local.md
+
+# --- os / editor ---
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+
+# agent runtime
+__pycache__/
+*.pyc
+arthabodh-reports/
+~/.sarrathi/
+.sarrathi/
+mcp.json
+agent_workspace/logs/*.json
+
+# the agent workspace is part of the repo (an example home)
+!agent_workspace/reports/
+!agent_workspace/memory/facts.jsonl

@@ -1,0 +1,80 @@
+name: CI
+
+on:
+  push:
+    branches: [main, master]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ["3.10", "3.12"]
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python ${{ matrix.python-version }}
+        uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+
+      - name: No third-party imports required (stdlib-only promise)
+        run: |
+          python - <<'PY'
+          import ast, pathlib, sys
+          stdlib_ok = {"csv","json","math","re","os","sys","argparse","hashlib","urllib",
+                       "http","http.server","dataclasses","pathlib","datetime","traceback","collections","typing","__future__",
+                       "subprocess","threading","time","tempfile","shlex","shutil","textwrap","itertools","functools","random"}
+          bad = []
+          for p in sorted(pathlib.Path(".").rglob("*.py")):
+              if ".github" in str(p):
+                  continue
+              tree = ast.parse(p.read_text())
+              for node in ast.walk(tree):
+                  if isinstance(node, ast.Import):
+                      for a in node.names:
+                          if a.name.split(".")[0] not in stdlib_ok and not a.name.startswith(("idea_oracle","sarrathi")):
+                              bad.append(f"{p}: import {a.name}")
+                  elif isinstance(node, ast.ImportFrom) and node.module and node.level == 0:
+                      root = node.module.split(".")[0]
+                      if root not in stdlib_ok and not root.startswith("idea_oracle"):
+                          bad.append(f"{p}: from {node.module}")
+          if bad:
+              print("Third-party imports found (must stay optional):")
+              print("\n".join(bad))
+              sys.exit(1)
+          print("OK: standard library only.")
+          PY
+
+      - name: Compile check
+        run: python -m compileall -q idea_oracle sarrathi agent.py cli.py server.py scripts tests
+
+      - name: Corpus health check
+        run: python scripts/fetch_data.py --check
+
+      - name: Engine regression suite (Shodh / Arthabodh)
+        run: python tests/test_intake.py
+
+      - name: Agent regression suite (loop, tools, memory, MCP, identity)
+        run: python tests/test_agent.py
+
+      - name: Agent boots, registers tools and writes memory (offline, no API key)
+        env:
+          SARRATHI_HOME: ${{ runner.temp }}/sarrathi-home
+        run: |
+          python agent.py --tools | grep -q shodh_research
+          python agent.py --offline --quiet "remember that CI is green" | grep -q Remembered
+          python agent.py --memory | grep -q "CI is green"
+          python agent.py --offline --quiet "/help" | grep -q "/research"
+          echo "OK: the agent runs, remembers and routes with no model and no network"
+
+      - name: Server boots and serves /api/health
+        run: |
+          python server.py &
+          SERVER_PID=$!
+          for i in $(seq 1 20); do sleep 0.5; curl -sf http://localhost:8000/api/health && break; done
+          curl -sf http://localhost:8000/api/health | python -c "import json,sys; d=json.load(sys.stdin); assert d['ok'] and d['cases']>=30; print('OK:', d['cases'],'cases')"
+          kill $SERVER_PID

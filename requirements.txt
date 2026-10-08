@@ -1,0 +1,16 @@
+# The Idea Oracle runs on the Python standard library only.
+#   python3 server.py            <- works with nothing installed
+#   python3 cli.py --demo        <- works with nothing installed
+#
+# These are OPTIONAL upgrades, not requirements:
+
+# --- Retrieval upgrade (only needed past ~5,000 documents) ---
+# chromadb>=0.5
+# sentence-transformers>=3.0
+# numpy>=1.26
+
+# --- Data work ---
+# pandas>=2.2
+
+# --- Alt UI (if you prefer Streamlit to the built-in web app) ---
+# streamlit>=1.40

@@ -1,0 +1,1225 @@
+{
+  "_meta": {
+    "purpose": "Structured 'what worked / what did not work' case files for the Idea Oracle agent. Every record is a compressed post-mortem built from PUBLIC reporting, company filings and public post-mortem compilations.",
+    "licence": "Compilation and original phrasing: CC BY 4.0 (free to reuse with credit). Underlying facts are public information.",
+    "confidence_scale": "high = documented in filings/major outlets; medium = contested or partial accounts; low = widely repeated but weakly sourced. Treat 'low' entries as hypotheses, not facts.",
+    "hard_warning": "Survivorship bias is baked into every 'what worked' claim. For every Netflix there are thousands of unrecorded lookalikes that died silently. Never treat a case as a prediction - treat it as a prior to test."
+  },
+  "cases": [
+    {
+      "id": "kodak-1975-2012",
+      "name": "Kodak",
+      "region": "North America",
+      "country": "United States",
+      "era": "1975-2012",
+      "sector": "Imaging / consumer tech",
+      "model": "Razor-blade (film + chemicals + processing)",
+      "outcome": "failed",
+      "what_worked": "Razor-blade economics on film made Kodak a global monopoly for decades; brand trust and retail ubiquity were near-unassailable.",
+      "what_didnt": "Kodak invented the digital camera in 1975 but could not cannibalise its own high-margin film business. Digital revenue arrived too slowly to replace film margins, so the org defended the old curve until bankruptcy in 2012.",
+      "cultural_factors": [
+        "US short-term orientation rewarded quarterly film profits over a decade-long transition",
+        "Engineering-led hierarchy was slow to accept that value would shift to software and sharing"
+      ],
+      "key_lesson": "The competitor that kills you is usually already inside your building. If your margin structure punishes the future, restructure the margin, not the roadmap.",
+      "tags": [
+        "incumbent-innovation",
+        "razor-blade",
+        "disruption",
+        "self-cannibalisation"
+      ],
+      "confidence": "high",
+      "source_type": "Company filings + wide public post-mortem coverage"
+    },
+    {
+      "id": "blockbuster-netflix-1997-2010",
+      "name": "Blockbuster vs Netflix",
+      "region": "North America",
+      "country": "United States",
+      "era": "1997-2010",
+      "sector": "Media retail",
+      "model": "Physical retail rental vs subscription mail/streaming",
+      "outcome": "mixed",
+      "what_worked": "Netflix started with a model the incumbent's stores could not profitably copy (mail + no late fees), then reinvested subscription cash into streaming before DVD declined. Blockbuster had the brand, the data and the chance to buy Netflix for ~$50M and declined.",
+      "what_didnt": "Blockbuster's franchise/retail cost base (late fees were ~a large profit centre) made the new model internally indefensible. Its own 'Total Access' counter-move was good but launched late and underfunded.",
+      "cultural_factors": [
+        "Incumbent's store culture and franchise politics blocked the digital pivot",
+        "Netflix's tech culture tolerated a loss-making transition for years"
+      ],
+      "key_lesson": "A business model your incumbent cannot copy without destroying its own P&L is worth more than a better product.",
+      "tags": [
+        "business-model-innovation",
+        "disruption",
+        "subscription",
+        "incumbent-trap"
+      ],
+      "confidence": "high",
+      "source_type": "Public reporting + both companies' filings"
+    },
+    {
+      "id": "we-work-2010-2023",
+      "name": "WeWork",
+      "region": "North America",
+      "country": "United States",
+      "era": "2010-2023",
+      "sector": "Real estate / workspace",
+      "model": "Long-term leases repackaged as short-term memberships",
+      "outcome": "failed",
+      "what_worked": "Community, design and brand made flexible office space desirable; enterprise demand for flexibility was real and the category survived.",
+      "what_didnt": "The liability mismatch (long leases, short commitments) is a finance company's risk dressed as a tech company's multiple. Growth-at-all-costs masked unit losses; governance and self-dealing destroyed IPO credibility.",
+      "cultural_factors": [
+        "US venture culture rewarded narrative over unit economics",
+        "Founder charisma substituted for financial discipline"
+      ],
+      "key_lesson": "Never let a story outrun a balance sheet. If your revenue is short-dated and your costs are long-dated, you are short a put option on the economy.",
+      "tags": [
+        "unit-economics",
+        "governance",
+        "hype",
+        "asset-light-claim"
+      ],
+      "confidence": "high",
+      "source_type": "S-1 filing, public reporting, bankruptcy proceedings"
+    },
+    {
+      "id": "theranos-2003-2018",
+      "name": "Theranos",
+      "region": "North America",
+      "country": "United States",
+      "era": "2003-2018",
+      "sector": "Health tech",
+      "model": "Proprietary diagnostics hardware",
+      "outcome": "failed",
+      "what_worked": "Nothing commercial scaled. The genuine lesson is that a compelling mission plus a prestigious board suppressed technical due diligence in every capital and media layer around it.",
+      "what_didnt": "The core technology did not work and was never independently verified. Secrecy, NDAs and 'we can't show you' were accepted as competitive protection rather than as red flags.",
+      "cultural_factors": [
+        "Silicon Valley's 'fake it till you make it' norm collided with a domain where failure can injure people",
+        "Institutional prestige substituted for peer review"
+      ],
+      "key_lesson": "In health, safety, finance or anything regulated, verification is the product. If you cannot show the evidence, you do not have the product.",
+      "tags": [
+        "fraud",
+        "verification",
+        "regulated-industry",
+        "trust"
+      ],
+      "confidence": "high",
+      "source_type": "Federal court record + major investigative reporting"
+    },
+    {
+      "id": "quibi-2018-2020",
+      "name": "Quibi",
+      "region": "North America",
+      "country": "United States",
+      "era": "2018-2020",
+      "sector": "Media streaming",
+      "model": "Subscription short-form mobile video, premium content",
+      "outcome": "failed",
+      "what_worked": "Raised $1.75B and produced genuinely professional content fast.",
+      "what_didnt": "Solved a problem nobody had: paying for short-form video in a world of free TikTok and YouTube, mobile-only, no screenshots, no TV cast, no social sharing. Launch coincided with a pandemic that removed the commute use-case it was designed for.",
+      "cultural_factors": [
+        "Hollywood-figure pedigree was mistaken for market demand",
+        "Industry-insider consensus replaced user research"
+      ],
+      "key_lesson": "Top-down 'we will make people want this' fails against bottom-up habits people already have for free. Validate habits, not taste.",
+      "tags": [
+        "product-market-fit",
+        "consumer-demand",
+        "hype"
+      ],
+      "confidence": "high",
+      "source_type": "Public reporting on shutdown + founder accounts"
+    },
+    {
+      "id": "juicero-2013-2017",
+      "name": "Juicero",
+      "region": "North America",
+      "country": "United States",
+      "era": "2013-2017",
+      "sector": "Consumer hardware / wellness",
+      "model": "Hardware + subscription consumables (razor-blade)",
+      "outcome": "failed",
+      "what_worked": "Raised ~$120M, built a real supply chain, and generated enormous awareness (largely negative).",
+      "what_didnt": "A $400 Wi-Fi juicer for $7-8 juice packs was beaten by the human hand - journalists squeezed the packs by hand and got the same result. The DRM-style QR gatekeeping removed the only remaining value.",
+      "cultural_factors": [
+        "Wellness-plus-VC culture funded a solution in search of a problem",
+        "Engineering elegance was mistaken for customer value"
+      ],
+      "key_lesson": "Always run the 'what does the customer actually do today?' test. If a free manual workaround matches your machine, your machine is a hobby.",
+      "tags": [
+        "over-engineering",
+        "razor-blade",
+        "niche-limits",
+        "value-proposition"
+      ],
+      "confidence": "high",
+      "source_type": "Public reporting + investor letters"
+    },
+    {
+      "id": "pets-com-1998-2000",
+      "name": "Pets.com",
+      "region": "North America",
+      "country": "United States",
+      "era": "1998-2000",
+      "sector": "E-commerce / pet supplies",
+      "model": "Direct-to-consumer online retail, heavy marketing",
+      "outcome": "failed",
+      "what_worked": "Brand recall was enormous; the sock puppet mascot is still remembered 25 years later.",
+      "what_didnt": "Shipping 20kg bags of dog food at negative margin, funded by Super Bowl ads, with no path to delivery density. The last-mile cost structure destroyed every incremental sale.",
+      "cultural_factors": [
+        "Dot-com era capital rewarded growth metrics and ignored gross margin",
+        "US market's cheap venture money delayed the reckoning"
+      ],
+      "key_lesson": "Low-value, high-weight, low-frequency physical goods need density before they need brand. Being early to a market you cannot afford to wait for is the same as being wrong.",
+      "tags": [
+        "unit-economics",
+        "last-mile",
+        "hype-cycle",
+        "too-early"
+      ],
+      "confidence": "high",
+      "source_type": "SEC filings + contemporaneous press"
+    },
+    {
+      "id": "webvan-1996-2001",
+      "name": "Webvan",
+      "region": "North America",
+      "country": "United States",
+      "era": "1996-2001",
+      "sector": "Grocery delivery",
+      "model": "Owned-warehouse online grocery",
+      "outcome": "failed",
+      "what_worked": "Built automated distribution centres that were genuinely ahead of their time; the model was correct.",
+      "what_didnt": "Expanded to 26 cities before proving one. Burned ~$800M on fixed automation while customer density per route was far too thin. Instacart later proved the same market works with an asset-light model and 20 more years of smartphone penetration.",
+      "cultural_factors": [
+        "Late-90s 'land grab' ideology equated speed of expansion with victory",
+        "No consumer habit of online grocery existed yet"
+      ],
+      "key_lesson": "Being right about the destination is worthless if your funding horizon is shorter than the market's adoption curve. Prove one city to profitability, then copy.",
+      "tags": [
+        "too-early",
+        "capital-intensity",
+        "scaling-discipline",
+        "grocery"
+      ],
+      "confidence": "high",
+      "source_type": "SEC filings + later comparative analyses of Instacart"
+    },
+    {
+      "id": "friendster-myspace-2002-2011",
+      "name": "Friendster and MySpace",
+      "region": "North America",
+      "country": "United States",
+      "era": "2002-2011",
+      "sector": "Social networks",
+      "model": "Ad-funded social graph",
+      "outcome": "failed",
+      "what_worked": "Both achieved explosive organic growth and proved that social graphs could be monetised at scale.",
+      "what_didnt": "Friendster lost to technical debt (page-load times in the tens of seconds) despite patenting the social network concept. MySpace lost to spam, clutter and a culture that optimised ad inventory over user experience. Facebook won on infrastructure, real identity and a cleaner product.",
+      "cultural_factors": [
+        "Engineering investment lagged growth in both cases",
+        "Ad-sales incentives corrupted the product experience"
+      ],
+      "key_lesson": "In network businesses, the moat is reliability and experience, not the network itself. Your users can leave in six months; your tech debt cannot.",
+      "tags": [
+        "network-effects",
+        "tech-debt",
+        "monetisation-vs-experience"
+      ],
+      "confidence": "high",
+      "source_type": "Public reporting + engineering post-mortems"
+    },
+    {
+      "id": "nokia-1865-2013",
+      "name": "Nokia mobile",
+      "region": "Europe",
+      "country": "Finland",
+      "era": "1990s-2013",
+      "sector": "Mobile devices",
+      "model": "Hardware scale + operator channel",
+      "outcome": "failed",
+      "what_worked": "Nokia mastered hardware logistics, operator relationships and emerging-market distribution at a scale nobody matched - 40% global share at peak.",
+      "what_didnt": "Believed phones were hardware while the industry moved to software ecosystems. Internal politics slowed Symbian, then bet the company on Windows Phone instead of Android. Bureaucracy and fear of cannibalising feature-phone volume blocked decisive action.",
+      "cultural_factors": [
+        "Finnish consensus culture and low tolerance for internal conflict slowed hard decisions",
+        "Success created risk-aversion exactly when bold bets were needed"
+      ],
+      "key_lesson": "When a platform shift arrives, the incumbent's distribution advantage becomes a liability. Choose the new platform fast, even at the cost of your current volume.",
+      "tags": [
+        "platform-shift",
+        "incumbent-trap",
+        "ecosystems",
+        "hardware-vs-software"
+      ],
+      "confidence": "high",
+      "source_type": "Company history + extensive post-mortem literature"
+    },
+    {
+      "id": "walmart-germany-1997-2006",
+      "name": "Walmart in Germany",
+      "region": "Europe",
+      "country": "Germany",
+      "era": "1997-2006",
+      "sector": "Retail",
+      "model": "Big-box retail",
+      "outcome": "failed",
+      "what_worked": "Global scale, buying power and logistics - all of which turned out to be irrelevant to the actual failure.",
+      "what_didnt": "Imported US playbook wholesale: greeting staff (read as harassment), bagging groceries (customers and staff refused), non-union posture against strong works councils, and direct competition with entrenched discounters Aldi/Lidl on their own price terms. Lost ~$1B+ before exiting.",
+      "cultural_factors": [
+        "German works-council and co-determination norms clashed with US labour practice",
+        "Aldi/Lidl had already trained German shoppers to expect hard discount",
+        "High uncertainty avoidance made unfamiliar store rituals unwelcome"
+      ],
+      "key_lesson": "Global scale does not override local norms on labour, service and price expectations. Localise the operating model, not just the signage.",
+      "tags": [
+        "market-entry",
+        "localisation",
+        "labour-culture",
+        "discounter"
+      ],
+      "confidence": "high",
+      "source_type": "Business press + company exit statements"
+    },
+    {
+      "id": "ebay-china-2003-2006",
+      "name": "eBay in China (vs Taobao)",
+      "region": "Asia",
+      "country": "China",
+      "era": "2003-2006",
+      "sector": "E-commerce",
+      "model": "Marketplace with listing fees",
+      "outcome": "failed",
+      "what_worked": "eBay bought EachNet, the leading Chinese auction site, and had global brand and payment infrastructure.",
+      "what_didnt": "Kept charging listing fees while Taobao was free, and centralised product decisions in the US rather than localising to Chinese buying habits. Taobao added built-in buyer-seller chat (Alipay escrow, Wangwang) that solved the trust problem eBay's model didn't. eBay retreated by 2006.",
+      "cultural_factors": [
+        "Low institutional trust made escrow and in-product chat essential, not optional",
+        "Local decision speed beat global brand",
+        "Price sensitivity across a low-ARPU mass market made fees lethal"
+      ],
+      "key_lesson": "In low-trust markets, whoever builds the trust rail owns the market. Never let HQ control product decisions in a market you do not understand.",
+      "tags": [
+        "trust-infrastructure",
+        "local-competition",
+        "marketplace",
+        "fees"
+      ],
+      "confidence": "high",
+      "source_type": "Public reporting + academic e-commerce case studies"
+    },
+    {
+      "id": "uber-sea-vs-grab-2012-2018",
+      "name": "Uber vs Grab in Southeast Asia",
+      "region": "Asia",
+      "country": "Singapore / Malaysia / Indonesia",
+      "era": "2012-2018",
+      "sector": "Ride-hailing / super app",
+      "model": "Marketplace + super-app expansion",
+      "outcome": "mixed",
+      "what_worked": "Uber had capital and product quality; Grab localised relentlessly - motorcycle taxis (ojek), cash payments, local-language support, and multi-service expansion into food and payments. Grab acquired Uber's SEA operations in 2018.",
+      "what_didnt": "Uber's 'one global app' approach under-served cash economies and motorbike-dominated traffic. Its local incentives were thinner than a local champion's willingness to lose money longer.",
+      "cultural_factors": [
+        "Cash-first, low-card-penetration markets defeated card-only design",
+        "Personal driver trust and community reputation beat anonymous dispatch",
+        "Dense motorbike traffic made cars the wrong default vehicle"
+      ],
+      "key_lesson": "In emerging markets, adapt the asset (vehicle), the payment rail (cash) and the trust model - or a local champion will. Payments and trust are the actual product.",
+      "tags": [
+        "emerging-markets",
+        "super-app",
+        "cash-economy",
+        "local-champion"
+      ],
+      "confidence": "high",
+      "source_type": "Public reporting + deal announcements"
+    },
+    {
+      "id": "m-pesa-2007-now",
+      "name": "M-Pesa",
+      "region": "Africa",
+      "country": "Kenya",
+      "era": "2007-present",
+      "sector": "Fintech / payments",
+      "model": "Agent-network mobile money",
+      "outcome": "worked",
+      "what_worked": "Rode existing rails - Safaricom's airtime dealer network became the cash-in/cash-out agent network, so distribution existed on day one. Solved a real problem (sending money home) with SMS USSD working on any phone. No bank account, no smartphone, no app required.",
+      "what_didnt": "Early regulatory ambiguity almost killed it; integration with banks and merchants came slowly, and the product stagnated for years in markets where competitors then moved faster.",
+      "cultural_factors": [
+        "Strong remittance and family-support norms made person-to-person transfers the killer use-case",
+        "Community trust in local agents outperformed trust in banks",
+        "Leapfrog dynamics: no legacy card infrastructure to displace"
+      ],
+      "key_lesson": "The winning product is often existing behaviour (sending money to family) moved onto new rails. Find the behaviour that already happens informally and remove its friction.",
+      "tags": [
+        "fintech",
+        "leapfrog",
+        "agent-network",
+        "distribution",
+        "trust"
+      ],
+      "confidence": "high",
+      "source_type": "Safaricom disclosures + extensive development-economics literature"
+    },
+    {
+      "id": "grameen-bank-1983",
+      "name": "Grameen Bank / microfinance",
+      "region": "Asia",
+      "country": "Bangladesh",
+      "era": "1983-present",
+      "sector": "Financial services / poverty finance",
+      "model": "Group-lending microcredit, collateral-free",
+      "outcome": "worked",
+      "what_worked": "Replaced physical collateral with social collateral: small groups of women jointly guaranteed each other's loans, and weekly meetings created repayment discipline plus a peer support and training network. Repayment rates above 95% for decades.",
+      "what_didnt": "Repeat replication often lost the community-development layer and became pure high-interest lending; in several markets commercialised microfinance led to over-indebtedness and political backlash.",
+      "cultural_factors": [
+        "Village social accountability structures became the enforcement mechanism",
+        "Women's groups built local authority that outlived the loan",
+        "Trust was local and personal, so national-scale lending without local groups failed"
+      ],
+      "key_lesson": "If you lack the collateral, build the social accountability structure. But strip the community layer out and you have a predatory lender, not a bank.",
+      "tags": [
+        "microfinance",
+        "social-collateral",
+        "trust",
+        "financial-inclusion"
+      ],
+      "confidence": "high",
+      "source_type": "Grameen disclosures + development finance research"
+    },
+    {
+      "id": "jollibee-vs-mcdonalds-philippines",
+      "name": "Jollibee vs McDonald's in the Philippines",
+      "region": "Asia",
+      "country": "Philippines",
+      "era": "1981-present",
+      "sector": "Quick-service restaurants",
+      "model": "Franchise / company-owned QSR",
+      "outcome": "worked",
+      "what_worked": "Jollibee beat McDonald's on its home turf by matching Filipino taste (sweeter spaghetti, rice meals, Chickenjoy) rather than selling an American menu, and by outpacing McDonald's in store openings in the 1980s before the giant localised. It then bought local competitors (Greenwich, Chowking) to consolidate.",
+      "what_didnt": "Jollibee's overseas expansion into markets where its Filipino flavour profile had no diaspora base struggled compared with its domestic dominance.",
+      "cultural_factors": [
+        "Rice-and-sweet flavour profile is core Filipino identity",
+        "Family-oriented, celebration-heavy dining culture rewarded a local brand",
+        "First-mover advantage in building store density pre-empted the global entrant"
+      ],
+      "key_lesson": "A local champion that owns the local taste, price point and store density can beat a global giant. The reverse - a global brand assuming its menu travels - is where locals win.",
+      "tags": [
+        "localisation",
+        "food-and-beverage",
+        "local-champion",
+        "density"
+      ],
+      "confidence": "high",
+      "source_type": "Company disclosures + market share data"
+    },
+    {
+      "id": "kfc-china-1987",
+      "name": "KFC in China",
+      "region": "Asia",
+      "country": "China",
+      "era": "1987-present",
+      "sector": "Quick-service restaurants",
+      "model": "Franchise + local joint venture",
+      "outcome": "worked",
+      "what_worked": "Entered Beijing in 1987 as a symbol of modernity and premium dining, then localised aggressively: congee, rice dishes, Peking-style wraps, regional menus, and thousands of stores with local partners. Became the largest restaurant chain in China, ahead of McDonald's there.",
+      "what_didnt": "Food-safety incidents and supplier scandals repeatedly damaged trust, showing how quickly a long-built reputation in a high-scrutiny market can be impaired.",
+      "cultural_factors": [
+        "Fried chicken reads as a celebration/family meal in Chinese culture",
+        "Local JV partnerships unlocked real estate and supply chains",
+        "Modernity and status signalling made the brand attractive at launch"
+      ],
+      "key_lesson": "Enter with meaning, then localise the menu region by region. In food, the menu must be rewritten per market - the brand is the constant, not the recipe.",
+      "tags": [
+        "localisation",
+        "joint-venture",
+        "china",
+        "food-and-beverage"
+      ],
+      "confidence": "high",
+      "source_type": "Yum Brands disclosures + market reporting"
+    },
+    {
+      "id": "dominos-india-1996",
+      "name": "Domino's India",
+      "region": "Asia",
+      "country": "India",
+      "era": "1996-present",
+      "sector": "Quick-service restaurants",
+      "model": "Master franchise + deep local menu engineering",
+      "outcome": "worked",
+      "what_worked": "Built a vegetarian-first menu in a majority-vegetarian market, invented India-specific products (Peppy Paneer, chicken tikka toppings, spicy 'peppy paneer' variants), guaranteed 30-minute delivery, and mapped delivery zones by hand in cities with poor addressing. Jubilant FoodWorks holds master franchise and became one of India's strongest listed consumer stories.",
+      "what_didnt": "Early years assumed Western pizza preferences and metro-only density; profitability took years per city while cold-chain and addressing problems were solved.",
+      "cultural_factors": [
+        "Vegetarian majority and religious food rules demanded menu re-engineering",
+        "Informal addressing made hand-built delivery-zone maps essential",
+        "Joint-family dining culture made sharing formats and value pricing matter"
+      ],
+      "key_lesson": "Menu, pricing, packaging and logistics all need re-engineering per culture. The brand travels; the operating model does not.",
+      "tags": [
+        "localisation",
+        "franchise",
+        "logistics",
+        "india",
+        "vegetarian"
+      ],
+      "confidence": "high",
+      "source_type": "Jubilant FoodWorks disclosures"
+    },
+    {
+      "id": "ikea-india-2018",
+      "name": "IKEA in India",
+      "region": "Asia",
+      "country": "India",
+      "era": "2018-present",
+      "sector": "Furniture retail",
+      "model": "Big-box retail + local sourcing",
+      "outcome": "mixed",
+      "what_worked": "Extensive pre-entry localisation: lower price points, Indian-size furniture (beds, storage for joint families), sourcing ~1,000 local suppliers, and a Hyderabad flagship. Took years of adaptation research before opening.",
+      "what_didnt": "Indian consumers historically prefer furniture assembled by carpenters and handed down across generations, not flat-pack DIY. Delivered, assembly-included pricing was essential because 'do it yourself' had limited cultural pull.",
+      "cultural_factors": [
+        "Carpenter-and-family-furniture tradition reduced DIY appeal",
+        "Joint-family storage and sizing needs differ from European norms",
+        "Price sensitivity required radical repricing versus global catalogue"
+      ],
+      "key_lesson": "When the culture says 'I hire someone to do that', sell the outcome (assembled, guaranteed) rather than the experience (DIY). Adapt the mental model, not only the catalogue.",
+      "tags": [
+        "market-entry",
+        "localisation",
+        "diy-vs-service",
+        "furniture"
+      ],
+      "confidence": "medium",
+      "source_type": "Company statements + retail analyst reporting"
+    },
+    {
+      "id": "coca-cola-india-1977-1993",
+      "name": "Coca-Cola exiting and re-entering India",
+      "region": "Asia",
+      "country": "India",
+      "era": "1977-1993",
+      "sector": "Beverages",
+      "model": "Franchised bottling + distribution",
+      "outcome": "mixed",
+      "what_worked": "On return in 1993, Coca-Cola bought out local champions (Thums Up, Limca, Gold Spot) and kept the local brands alive rather than killing them. Thums Up remains a top-selling Indian cola - a locally-positioned, 'stronger' taste profile that Coca-Cola's flagship never displaced.",
+      "what_didnt": "The 1977 exit was forced by a regulatory fight over dilution of the secret formula; re-entry required rebuilding from zero against a locally entrenched incumbent (Parle). Early leadership attempts to kill Thums Up almost destroyed a valuable asset before it was retained.",
+      "cultural_factors": [
+        "Strong local taste preference for a spicier, more carbonated cola",
+        "Political/investment regulation can remove you from a market overnight",
+        "Keeping acquired local brands preserves the emotional connection consumers have"
+      ],
+      "key_lesson": "Never kill the local brand you acquired - it owns the cultural taste you cannot replicate. And design your ownership structure for regulatory risk.",
+      "tags": [
+        "regulatory-risk",
+        "brand-portfolio",
+        "india",
+        "beverages"
+      ],
+      "confidence": "high",
+      "source_type": "Public reporting + Coca-Cola India history"
+    },
+    {
+      "id": "netflix-2011-qwikster",
+      "name": "Netflix Qwikster (self-inflicted failure)",
+      "region": "North America",
+      "country": "United States",
+      "era": "2011",
+      "sector": "Media streaming",
+      "model": "Subscription",
+      "outcome": "failed",
+      "what_worked": "The underlying logic - separating mail DVD from streaming - was directionally correct and became the future of the company.",
+      "what_didnt": "Announced a 60% price rise and a separate brand in the same breath, forcing customers to manage two accounts while the streaming library was still thin. Lost ~800k subscribers, stock fell ~77% and the plan was withdrawn within weeks.",
+      "cultural_factors": [
+        "US consumer price-transparency expectations made a hidden 60% rise feel like a bait-and-switch",
+        "Brand fragmentation diluted trust"
+      ],
+      "key_lesson": "Executing the right strategy the wrong way is worse than being late. Change price and change structure in separate steps, and never in one announcement.",
+      "tags": [
+        "pricing",
+        "change-management",
+        "communication",
+        "rebrand"
+      ],
+      "confidence": "high",
+      "source_type": "Company filings + press coverage"
+    },
+    {
+      "id": "amazon-marketplace-2000",
+      "name": "Amazon Marketplace",
+      "region": "North America",
+      "country": "United States",
+      "era": "2000-present",
+      "sector": "E-commerce",
+      "model": "Third-party marketplace + logistics as a service",
+      "outcome": "worked",
+      "what_worked": "Invited competitors onto its own storefront. Third-party sellers produced the selection growth Amazon could never fund alone (most units sold are now third-party), and FBA turned Amazon's logistics cost centre into a fee-earning service for those same sellers.",
+      "what_didnt": "Amazon repeatedly faced allegations of using seller data to launch competing private-label products, and counterfeit/piracy problems persist - both now the subject of regulatory attention.",
+      "cultural_factors": [
+        "US anti-trust and marketplace norms permitted vertical integration that other jurisdictions scrutinise harder",
+        "Seller-entrepreneur culture supplied the inventory"
+      ],
+      "key_lesson": "Turning your biggest cost centre into a platform others pay you to use is the highest-leverage move in distribution. But if you also compete with those sellers, expect regulation.",
+      "tags": [
+        "platform",
+        "marketplace",
+        "vertical-integration",
+        "logistics-as-a-service"
+      ],
+      "confidence": "high",
+      "source_type": "Company filings + regulatory filings"
+    },
+    {
+      "id": "atlassian-2002",
+      "name": "Atlassian",
+      "region": "Oceania",
+      "country": "Australia",
+      "era": "2002-present",
+      "sector": "B2B software",
+      "model": "Bootstrapped, no-sales-team self-serve software",
+      "outcome": "worked",
+      "what_worked": "Founded in Sydney with ~$10k credit-card debt, no sales team for the first years, sold via download and later tried before buying. Built in a small market, so had to be export-ready from day one. Only took outside capital 8 years in.",
+      "what_didnt": "Self-serve-no-sales model later had to be augmented for enterprise; and pricing changes have periodically angered the community.",
+      "cultural_factors": [
+        "Small domestic market forces Australia/NZ firms to be globally competitive early",
+        "Australian low-tall-poppy culture favours product-led over hype-led growth"
+      ],
+      "key_lesson": "Small home markets are a feature, not a bug: they force export-grade products. Product-led growth beats outbound sales for low-ACV tools.",
+      "tags": [
+        "bootstrapping",
+        "product-led-growth",
+        "australia",
+        "b2b-saas"
+      ],
+      "confidence": "high",
+      "source_type": "Founder interviews + company filings"
+    },
+    {
+      "id": "canva-2013",
+      "name": "Canva",
+      "region": "Oceania",
+      "country": "Australia",
+      "era": "2013-present",
+      "sector": "Design software",
+      "model": "Freemium web app",
+      "outcome": "worked",
+      "what_worked": "Took design software that cost hundreds per seat and required expertise, and made the core task (drag, drop, template, export) work in a browser for non-designers. Freemium acquisition plus team/collaboration upsell. Built in Sydney, scaled globally online.",
+      "what_didnt": "Early years were slow on monetisation; competition from Adobe was answered by going further down-market and into education/non-profit segments.",
+      "cultural_factors": [
+        "Templated, low-friction design suited global creator/SMB long tail",
+        "Remote-first, globally distributed hiring from an Australian base"
+      ],
+      "key_lesson": "The biggest market is the people excluded by the incumbent's complexity. Simplify the workflow and give away the entry point.",
+      "tags": [
+        "freemium",
+        "product-led-growth",
+        "australia",
+        "creator-economy"
+      ],
+      "confidence": "high",
+      "source_type": "Company disclosures + press"
+    },
+    {
+      "id": "afterpay-2014",
+      "name": "Afterpay / Buy Now Pay Later",
+      "region": "Oceania",
+      "country": "Australia",
+      "era": "2014-2022",
+      "sector": "Fintech / consumer credit",
+      "model": "Merchant-funded instalment payments",
+      "outcome": "worked",
+      "what_worked": "Inverted the credit model: instead of charging the shopper interest, charged the merchant a fee for higher conversion and basket size. Removed the psychological pain of payment for a generation that distrusted credit cards. Acquired by Block for ~US$29B.",
+      "what_didnt": "Attracted intense regulatory scrutiny over consumer debt, late fees and 'phantom debt' framing; required buy-now-pay-later-specific regulation in several markets and is now subject to credit-style rules in places including Australia and the UK.",
+      "cultural_factors": [
+        "Gen Z / millennial aversion to credit-card debt made a fee-free-to-user model attractive",
+        "Australian regulatory sandbox allowed the model to scale before rules caught up"
+      ],
+      "key_lesson": "If your product makes the customer's life feel cheaper and the merchant's conversion better, growth is fast - but financial products eventually get regulated wherever they scale.",
+      "tags": [
+        "fintech",
+        "bnpl",
+        "regulatory-risk",
+        "revenue-model"
+      ],
+      "confidence": "high",
+      "source_type": "ASX filings + regulatory reviews"
+    },
+    {
+      "id": "taobao-alibaba-2003",
+      "name": "Taobao / Alibaba",
+      "region": "Asia",
+      "country": "China",
+      "era": "2003-present",
+      "sector": "E-commerce + payments",
+      "model": "Free marketplace + escrow payments + advertising monetisation",
+      "outcome": "worked",
+      "what_worked": "Free listings destroyed eBay's fee model; Alipay escrow solved the trust problem; Wangwang chat let buyers and sellers negotiate like in a physical market; Ant Financial extended credit to sellers with no bank history. Monetised later through ads, not listing fees.",
+      "what_didnt": "The Ant IPO was halted by regulators in 2020, showing how quickly state priorities can redefine the value of a private platform.",
+      "cultural_factors": [
+        "Low institutional trust made escrow and negotiation essential",
+        "Small-vendor density in manufacturing clusters made low-cost listing vital",
+        "Relationship-based trading (bargaining, chat) had to be reproduced digitally"
+      ],
+      "key_lesson": "Match the local trade ritual. In markets where bargaining and distrust of strangers are norms, chat and escrow are not features - they are the business model.",
+      "tags": [
+        "marketplace",
+        "trust-infrastructure",
+        "payments",
+        "china",
+        "regulation"
+      ],
+      "confidence": "high",
+      "source_type": "Company filings + academic case studies"
+    },
+    {
+      "id": "wenzhou-model",
+      "name": "Wenzhou migrant business networks",
+      "region": "Asia",
+      "country": "China",
+      "era": "1980s-present",
+      "sector": "Manufacturing / trade",
+      "model": "Clan and hometown-based capital, credit and distribution networks",
+      "outcome": "worked",
+      "what_worked": "Wenzhou merchants built global trading and light-manufacturing networks using informal hometown credit (rotating credit associations), shared information, and family labour. Enabled capital formation and market entry with almost no formal financing. Similar patterns appear in Chinese diaspora networks across Southeast Asia and in Indian trading communities.",
+      "what_didnt": "Opaque informal credit can amplify speculative bubbles - Wenzhou saw periodic private-lending crises when a link in the chain defaulted and the whole network froze.",
+      "cultural_factors": [
+        "Trust based on kinship and shared origin replaces contracts",
+        "Rotating savings associations (biao hui) act as banking for those excluded from formal credit",
+        "Reputation damage is the enforcement mechanism, so reputation is priced"
+      ],
+      "key_lesson": "Informal, reputation-based networks can outperform formal credit systems where institutions are weak or slow. But contagion risk concentrates exactly where trust is blind.",
+      "tags": [
+        "diaspora",
+        "informal-credit",
+        "trust",
+        "network-effects",
+        "china"
+      ],
+      "confidence": "medium",
+      "source_type": "Academic literature on Chinese private enterprise + journalism"
+    },
+    {
+      "id": "italian-industrial-districts",
+      "name": "Italian industrial districts (e.g. Sassuolo, Prato, Biella)",
+      "region": "Europe",
+      "country": "Italy",
+      "era": "1950s-present",
+      "sector": "Manufacturing / luxury supply chains",
+      "model": "Clusters of small specialised family firms",
+      "outcome": "worked",
+      "what_worked": "Hundreds of tiny family firms each specialising in one step of a craft (ceramic tile, wool weaving, eyewear, packaging machinery) formed an ecosystem that could rival large factories while staying flexible and design-led. Shared local labour pools, rapid copying of innovations, deep craft skill transfer.",
+      "what_didnt": "Globalisation and cheap imports hollowed out many low-end districts; succession problems in family firms and thin management layers limit scaling, and the model struggles when competition shifts to scale and marketing budgets.",
+      "cultural_factors": [
+        "Family-firm continuity and craft pride drive long-term specialisation",
+        "Local trust and shared identity let competitors cooperate on standards and labour",
+        "Regional identity matters more than national identity"
+      ],
+      "key_lesson": "Decentralised clusters can beat vertical integration in design-led, high-mix manufacturing. But they need succession and brand investment to survive scale competition.",
+      "tags": [
+        "clusters",
+        "family-business",
+        "craft",
+        "manufacturing",
+        "italy"
+      ],
+      "confidence": "high",
+      "source_type": "Economic geography literature"
+    },
+    {
+      "id": "japanese-keiretsu",
+      "name": "Japanese keiretsu and supplier networks",
+      "region": "Asia",
+      "country": "Japan",
+      "era": "1950s-present",
+      "sector": "Manufacturing / automotive",
+      "model": "Interlocking corporate groups and long-term supplier relationships",
+      "outcome": "worked",
+      "what_worked": "Cross-shareholding groups plus just-in-time supplier relationships (as in Toyota's production system) delivered world-leading quality and inventory efficiency. Long-term supplier relationships justified investment in skills and continuous improvement (kaizen) that quarterly-contract relationships never would.",
+      "what_didnt": "The system's insularity made Japanese firms slow to adopt external platforms and software; cross-shareholdings suppressed domestic M&A and returns on equity lagged global peers for decades.",
+      "cultural_factors": [
+        "Long-term orientation and collectivism favour relationship contracts over spot contracts",
+        "Loyalty and consensus create quality but reduce restructuring speed"
+      ],
+      "key_lesson": "Long-term relationship contracting is a genuine competitive advantage in quality-intensive manufacturing - and a genuine liability when the world shifts to software and speed.",
+      "tags": [
+        "supply-chain",
+        "long-term-orientation",
+        "quality",
+        "japan",
+        "kaizen"
+      ],
+      "confidence": "high",
+      "source_type": "Industrial economics literature + Toyota disclosures"
+    },
+    {
+      "id": "amul-cooperative-india",
+      "name": "Amul dairy cooperative",
+      "region": "Asia",
+      "country": "India",
+      "era": "1946-present",
+      "sector": "Dairy / FMCG cooperative",
+      "model": "Three-tier farmer cooperative (village -> district -> state federation)",
+      "outcome": "worked",
+      "what_worked": "The 'white revolution': organised millions of small dairy farmers, many with one or two animals, into village societies that collected milk daily, paid on quality, and professionalised processing. Farm-level payments created rural income while a professional brand monetised nationally. Women's participation was central.",
+      "what_didnt": "Cooperative governance can become politically captured and slow; scaling professional management while retaining democratic member control is a permanent tension.",
+      "cultural_factors": [
+        "Village collective structures and caste/community networks were repurposed for commercial organisation",
+        "Trust in a brand owned by farmers, not distant shareholders",
+        "Daily cash payment matched the cash-flow rhythm of smallholder households"
+      ],
+      "key_lesson": "A cooperative can out-compete corporate FMCG when the supply base is fragmented and trust is the scarcest resource. Ownership design is a strategy, not an afterthought.",
+      "tags": [
+        "cooperative",
+        "supply-chain",
+        "india",
+        "rural",
+        "fmcg"
+      ],
+      "confidence": "high",
+      "source_type": "Amul/GCMMF disclosures + development literature"
+    },
+    {
+      "id": "korean-chaebol",
+      "name": "Korean chaebol model",
+      "region": "Asia",
+      "country": "South Korea",
+      "era": "1960s-present",
+      "sector": "Conglomerates",
+      "model": "State-backed family-controlled diversified conglomerates",
+      "outcome": "mixed",
+      "what_worked": "State-directed credit plus family-controlled conglomerates (Samsung, Hyundai, LG, SK) achieved industrialisation and export scale at extraordinary speed, moving from textiles to semiconductors and shipping to semiconductors and displays.",
+      "what_didnt": "High leverage and state-directed diversification caused the 1997 crisis; the model created concentration risk, governance issues and a market where small firms struggle (the 'Korea discount').",
+      "cultural_factors": [
+        "High power distance and collectivism supported top-down family control and employee loyalty",
+        "Long-term orientation supported decade-long investments in capital-intensive industries",
+        "State-corporate coordination replaced market signalling"
+      ],
+      "key_lesson": "Concentrated, patient, state-coordinated capital can build whole industries - and creates systemic fragility. Success is real; so is the concentration risk.",
+      "tags": [
+        "conglomerate",
+        "state-capitalism",
+        "korea",
+        "governance",
+        "export-driven"
+      ],
+      "confidence": "high",
+      "source_type": "Economic history + IMF crisis literature"
+    },
+    {
+      "id": "better-place-2007-2013",
+      "name": "Better Place (EV battery swapping)",
+      "region": "Middle East",
+      "country": "Israel",
+      "era": "2007-2013",
+      "sector": "Cleantech / mobility",
+      "model": "Battery-swap stations + subscription",
+      "outcome": "failed",
+      "what_worked": "Raised ~$850M and built the first demonstration battery-swap network with Renault; the core engineering and the diagnosis that charging time was the adoption blocker were both plausible.",
+      "what_didnt": "Bet on standardisation across carmakers that never agreed, and on capital-intensive physical infrastructure before vehicle volume existed. Tesla instead bet on proprietary fast charging plus better batteries as pack costs fell. Better Place liquidated in 2013.",
+      "cultural_factors": [
+        "Single-founder advocacy and a small-market pilot (Israel/Denmark) were mistaken for global readiness",
+        "Capital-intensive infra bets require the whole industry to move together - a coordination problem no startup can solve alone"
+      ],
+      "key_lesson": "Hardware infrastructure bets require either a standard you control or volumes you already have. Betting on rivals agreeing to your format is a financing problem disguised as a technology bet.",
+      "tags": [
+        "cleantech",
+        "coordination-problem",
+        "capital-intensity",
+        "too-early"
+      ],
+      "confidence": "high",
+      "source_type": "Bankruptcy reporting + investor accounts"
+    },
+    {
+      "id": "ftx-2019-2022",
+      "name": "FTX",
+      "region": "North America",
+      "country": "Bahamas / United States",
+      "era": "2019-2022",
+      "sector": "Crypto exchange",
+      "model": "Exchange + proprietary token + affiliated market maker",
+      "outcome": "failed",
+      "what_worked": "Genuine product quality and speed made it one of the fastest-growing exchanges; regulatory lobbying was highly effective in the US.",
+      "what_didnt": "Customer funds were commingled with an affiliated trading firm; no board, no CFO, no risk function. Collapsed in days in November 2022 with billions missing; founder convicted of fraud.",
+      "cultural_factors": [
+        "Frontier/'move fast' crypto culture normalised the absence of governance",
+        "Regulatory ambiguity in offshore jurisdictions enabled the structure",
+        "Celebrity endorsement and political access substituted for audits"
+      ],
+      "key_lesson": "Governance is not overhead - it is the product in finance. If there is no independent record of where customer money is, there is no business.",
+      "tags": [
+        "governance",
+        "fraud",
+        "crypto",
+        "regulated-industry",
+        "trust"
+      ],
+      "confidence": "high",
+      "source_type": "Court records + bankruptcy filings"
+    },
+    {
+      "id": "shopify-2006",
+      "name": "Shopify",
+      "region": "North America",
+      "country": "Canada",
+      "era": "2006-present",
+      "sector": "E-commerce infrastructure",
+      "model": "SaaS subscriptions + payments + app ecosystem",
+      "outcome": "worked",
+      "what_worked": "Served the long tail Amazon ignored: independent merchants who wanted their own storefront and customer relationship. Kept the platform open (apps, themes, APIs) so third parties built the missing features, and monetised via payments plus subscriptions rather than taking a cut of merchandise like a marketplace.",
+      "what_didnt": "Its merchants' dependence on social/ad platforms made the whole ecosystem exposed to ad-cost inflation; large merchants eventually outgrow it and move to custom stacks.",
+      "cultural_factors": [
+        "Built in Canada, culturally comfortable serving small merchants rather than chasing large enterprise deals",
+        "Merchant independence is a shared value, not just a segment"
+      ],
+      "key_lesson": "When the giant in your space serves the head of the market, serve the tail - and let an ecosystem fill your product gaps. Also: your customers' dependency risk is your dependency risk.",
+      "tags": [
+        "saas",
+        "long-tail",
+        "platform",
+        "ecosystem",
+        "canada"
+      ],
+      "confidence": "high",
+      "source_type": "Company filings + founder accounts"
+    },
+    {
+      "id": "zapier-2011",
+      "name": "Zapier",
+      "region": "North America",
+      "country": "United States",
+      "era": "2011-present",
+      "sector": "Automation software",
+      "model": "Freemium SaaS, remote-first, no outside sales",
+      "outcome": "worked",
+      "what_worked": "Took the unglamorous middleware problem ('connect app A to app B') and made it work with zero code for non-technical teams. Grew with the explosion of SaaS tools; stayed profitable and remote-first from early on without aggressive venture funding.",
+      "what_didnt": "Complex multi-step automations hit ceiling of non-technical users, and platform vendors (native integrations, plus AI agents) now compete with the category itself.",
+      "cultural_factors": [
+        "Product-led growth suited the low-ACV, high-volume long tail",
+        "Remote-first hiring expanded addressable talent beyond US tech hubs"
+      ],
+      "key_lesson": "Boring connective infrastructure between popular tools is a durable business. But if your value is 'gluing other people's products', watch the platforms.",
+      "tags": [
+        "saas",
+        "freemium",
+        "product-led-growth",
+        "long-tail",
+        "automation"
+      ],
+      "confidence": "high",
+      "source_type": "Company disclosures + founder writing"
+    },
+    {
+      "id": "haier-1984",
+      "name": "Haier turnaround",
+      "region": "Asia",
+      "country": "China",
+      "era": "1984-present",
+      "sector": "Home appliances",
+      "model": "Quality turnaround then 'Rendanheyi' micro-enterprise structure",
+      "outcome": "worked",
+      "what_worked": "In 1985 a Chinese factory manager smashed 76 defective refrigerators with a sledgehammer to signal that quality mattered - a public act that became a legend inside the company. Haier then broke itself into thousands of self-managing micro-enterprises (Rendanheyi), let frontline teams contract directly with users, and acquired GE Appliances (2016) then turned it around.",
+      "what_didnt": "The imported US management layers at GE Appliances resisted the flat structure; the radical decentralisation is hard to copy and hard to govern at very large scale.",
+      "cultural_factors": [
+        "High power distance made a leader's symbolic act of quality discipline unusually powerful",
+        "Chinese willingness to experiment with organisational design rather than copying Western structures",
+        "Collectivist teamwork supported internal entrepreneurship"
+      ],
+      "key_lesson": "Culture change starts with one visible irreversible act by leadership. And in collectivist, high-power-distance settings a symbolic public act beats a policy document.",
+      "tags": [
+        "turnaround",
+        "quality",
+        "organisational-design",
+        "china",
+        "culture-change"
+      ],
+      "confidence": "high",
+      "source_type": "Company history + Harvard Business Review reporting"
+    },
+    {
+      "id": "clubhouse-2020-2021",
+      "name": "Clubhouse",
+      "region": "North America",
+      "country": "United States",
+      "era": "2020-2021",
+      "sector": "Social audio",
+      "model": "Invite-only live audio app",
+      "outcome": "failed",
+      "what_worked": "Explosive growth during pandemic lockdowns; live audio discussion reached cultural ubiquity in weeks and validated a genuine desire for synchronous conversation.",
+      "what_didnt": "Invite-only exclusivity plus lockdown conditions produced a temporary bubble of usage no format could sustain once competitors (Twitter Spaces, Spotify Greenroom, Discord) shipped the same feature. Retention collapsed and creator monetisation never materialised at scale.",
+      "cultural_factors": [
+        "Pandemic-specific behaviour was mistaken for a durable habit",
+        "Exclusivity-driven hype inflated the perceived market"
+      ],
+      "key_lesson": "Ask whether growth is caused by the product or by a temporary condition. If your growth driver is external, look how fast it will disappear.",
+      "tags": [
+        "hype",
+        "temporary-demand",
+        "feature-not-product",
+        "retention"
+      ],
+      "confidence": "high",
+      "source_type": "Public reporting on layoffs and strategy shift"
+    },
+    {
+      "id": "sea-early-shopback-garena",
+      "name": "Sea Group (Garena, Shopee)",
+      "region": "Asia",
+      "country": "Singapore",
+      "era": "2009-present",
+      "sector": "Gaming + e-commerce",
+      "model": "Games cash flow funding e-commerce land grab",
+      "outcome": "worked",
+      "what_worked": "Used a profitable gaming business (Free Fire) to fund Shopee's e-commerce expansion across Southeast Asia, then localised hard: mobile-first, cash on delivery, subsidised shipping, local seller onboarding and network-of-agents logistics. Beat Lazada in several markets.",
+      "what_didnt": "Extreme cash burn while fighting Shopee/Lazada/Tokopedia; regional profitability took years and required later fee increases.",
+      "cultural_factors": [
+        "Cash-on-delivery and low-trust environments required logistics design around payment risk",
+        "Mobile-first, gaming-native audience in Southeast Asia",
+        "Adopting and rebranding globally proven formats (Tencent-linked gaming) at local speed"
+      ],
+      "key_lesson": "A profitable cash engine that funds a land grab in a new sector is a repeatable emerging-market strategy - it buys you time to localise.",
+      "tags": [
+        "sea",
+        "gaming",
+        "e-commerce",
+        "cash-flow-engineering",
+        "localisation"
+      ],
+      "confidence": "high",
+      "source_type": "Company filings + market share reporting"
+    },
+    {
+      "id": "tat-group-india",
+      "name": "Tata Group",
+      "region": "Asia",
+      "country": "India",
+      "era": "1868-present",
+      "sector": "Conglomerate",
+      "model": "Family-founded philanthropic trust-owned conglomerate",
+      "outcome": "worked",
+      "what_worked": "Diversified from textiles to steel, hotels, cars, IT services (TCS) and consumer goods while being majority-owned by philanthropic trusts rather than dynastic shareholders. Reputation for ethics and employee welfare became a commercial asset; TCS carried group profitability for years.",
+      "what_didnt": "Conglomerate sprawl and capital allocation can be slow, and the trusts structure limits aggressive M&A flexibility (e.g. the slow exit from loss-making ventures).",
+      "cultural_factors": [
+        "Trust ownership aligns with Indian values of izzat (family honour) and long-term reputation",
+        "High-power-distance, relationship-based environment made founder-trust a market advantage",
+        "Political neutrality and local credibility were strategic assets"
+      ],
+      "key_lesson": "Ownership structure is a strategic choice with cultural consequences. Reputation-driven capital can be patient, but it can also be slow.",
+      "tags": [
+        "conglomerate",
+        "family-business",
+        "india",
+        "trust-ownership",
+        "reputation"
+      ],
+      "confidence": "high",
+      "source_type": "Company disclosures + Indian business press"
+    },
+    {
+      "id": "amazon-berkshire-trust",
+      "name": "Berkshire Hathaway / Buffett model",
+      "region": "North America",
+      "country": "United States",
+      "era": "1965-present",
+      "sector": "Holding company / insurance float",
+      "model": "Insurance float + decentralised operating subsidiaries",
+      "outcome": "worked",
+      "what_worked": "Used insurance float as low-cost permanent capital to buy high-quality businesses and hold them indefinitely, giving operating managers near-total autonomy with a very small head office. Culture of long-term, low-ego capital allocation.",
+      "what_didnt": "Often criticised for slow adaptation to technology; the model depends on a specific culture of patient capital that is hard to replicate without the founder's reputation.",
+      "cultural_factors": [
+        "US capital markets permit permanent holding structures and long-term-hold investor base",
+        "Decentralisation fits low-power-distance American management culture"
+      ],
+      "key_lesson": "Cheap permanent capital plus decentralised operations plus a long time horizon is a compounding machine. Imitators usually fail on the cost of capital, not the philosophy.",
+      "tags": [
+        "holding-company",
+        "capital-allocation",
+        "insurance",
+        "long-term"
+      ],
+      "confidence": "medium",
+      "source_type": "Annual shareholder letters + public filings"
+    },
+    {
+      "id": "gojek-2010",
+      "name": "Gojek",
+      "region": "Asia",
+      "country": "Indonesia",
+      "era": "2010-present",
+      "sector": "Super app",
+      "model": "Motorbike ride-hailing growing into a multi-service platform",
+      "outcome": "worked",
+      "what_worked": "Started as a call-centre for 20 ojek (motorcycle taxi) drivers, formalising work that already existed informally. Expanded into food delivery, groceries, payments (GoPay) and courier services, then merged with Tokopedia in 2021. Riders, not employees, needed the formal identity and income stability the platform gave them.",
+      "what_didnt": "Chronic losses during the subsidy wars with Grab; a listed company profile then demanded profitability, forcing cuts to perks riders depended on.",
+      "cultural_factors": [
+        "Informal, motorbike-based transport was the actual transport system - not a problem to be replaced but a system to be organised",
+        "Cash and driver-trust relationships were the starting rails",
+        "Getting drivers a legal identity mattered personally and socially"
+      ],
+      "key_lesson": "Formalise what already exists informally. The best emerging-market platforms do not create new supply - they organise existing supply and give it infrastructure.",
+      "tags": [
+        "super-app",
+        "informal-economy",
+        "indonesia",
+        "motorbike",
+        "localisation"
+      ],
+      "confidence": "high",
+      "source_type": "Company disclosures + market reporting"
+    },
+    {
+      "id": "hollywood-franchise-model",
+      "name": "Hollywood franchise and IP rebundling",
+      "region": "North America",
+      "country": "United States",
+      "era": "1975-present",
+      "sector": "Entertainment",
+      "model": "IP franchises + global distribution windows",
+      "outcome": "worked",
+      "what_worked": "Shifted from one-off films to owned IP franchises (Star Wars, Marvel, DC) with merchandising, theme parks and streaming rights. Sequels and remakes reduce market risk by using known characters; global box office lets a film lose money domestically and profit abroad.",
+      "what_didnt": "Franchise-fatigue and oversaturation have produced high-profile flops in recent years; cost inflation plus streaming cannibalisation damaged theatrical economics.",
+      "cultural_factors": [
+        "Global reach means content must be culturally portable (action, universal myth, spectacle) and light on local-specific meaning",
+        "Franchise fandom is a form of modern tribalism with real economic value"
+      ],
+      "key_lesson": "When distribution goes global, content becomes more universal and less locally specific - which opens space for local-language operators to serve the audiences global studios now under-serve. That gap is a business opportunity.",
+      "tags": [
+        "ip",
+        "media",
+        "globalisation",
+        "franchise",
+        "local-vs-global"
+      ],
+      "confidence": "medium",
+      "source_type": "Studio reporting + industry analysis"
+    },
+    {
+      "id": "crikey-china-local-media",
+      "name": "Local-language media and content arbitrage",
+      "region": "Global",
+      "country": "Multiple",
+      "era": "2000s-present",
+      "sector": "Media / content",
+      "model": "Local-language and culturally specific content",
+      "outcome": "worked",
+      "what_worked": "Korean drama (hallyu), Nigerian Nollywood, Turkish exports and Indian regional-language streaming succeeded by serving audiences global studios ignored, then exporting once proven. Nollywood reached global scale on camcorders and VHS before any institutional financing existed.",
+      "what_didnt": "Monetisation is notoriously hard; piracy and ad-arbitrage destroy value. Many creators never convert audience scale into revenue.",
+      "cultural_factors": [
+        "Culture-bound stories that feel authentic to a local audience can become globally legible (K-drama, Bollywood)",
+        "Informal distribution networks often precede formal ones",
+        "Language and family values are the differentiators"
+      ],
+      "key_lesson": "Serve specific cultures first, then export. Authenticity to a real audience beats universality-by-design, and the export opportunity is usually unexpected.",
+      "tags": [
+        "media",
+        "content",
+        "culture-export",
+        "nollywood",
+        "korea"
+      ],
+      "confidence": "medium",
+      "source_type": "Media industry research"
+    },
+    {
+      "id": "open-source-commercialization",
+      "name": "Open-source-to-commercial (Red Hat, Hugging Face, Supabase)",
+      "region": "Global",
+      "country": "Multiple",
+      "era": "1993-present",
+      "sector": "Software",
+      "model": "Open-core / open-source + hosted services",
+      "outcome": "worked",
+      "what_worked": "Give the core away to build distribution and community trust, sell the operational ease (hosting, support, compliance, managed scale) to businesses. Red Hat proved it for operating systems; Supabase and Hugging Face prove it for databases and models.",
+      "what_didnt": "Cloud providers re-hosting open-source projects as managed services without contributing back (AWS/Elasticsearch, Redis, MongoDB licence changes) forced licence changes and community friction - open-core is fragile when a hyperscaler eats your margins.",
+      "cultural_factors": [
+        "Developer culture values openness and 'inspectability' as trust - particularly in high-uncertainty-avoidance markets where compliance is required",
+        "Community contributions are unpaid labour with expectations attached"
+      ],
+      "key_lesson": "Open-source is the cheapest distribution channel in software and the hardest to defend. The durable moat is operations and trust, not source code.",
+      "tags": [
+        "open-source",
+        "developer-tools",
+        "distribution",
+        "business-model"
+      ],
+      "confidence": "high",
+      "source_type": "Company disclosures + licence-change controversies"
+    },
+    {
+      "id": "wework-china-accelerator-hype",
+      "name": "Cross-border accelerator and 'copy-to-China' plays",
+      "region": "Asia",
+      "country": "China",
+      "era": "2010s",
+      "sector": "Startups / venture",
+      "model": "Import proven US business model, localise and scale",
+      "outcome": "mixed",
+      "what_worked": "Copy-to-China produced real giants: Baidu (search), Alibaba (marketplace), Tencent/QQ (messaging), Didi (ride-hailing), Meituan (group buying + delivery). Local execution, local capital, and ignoring the original's US constraints made them stronger than the imports.",
+      "what_didnt": "Faithfully copying the US playbook without rethinking payments, trust and distribution failed repeatedly (eBay in China, Uber losing to Didi, Google vs Baidu).",
+      "cultural_factors": [
+        "Fast domestic competition means local players iterate faster than foreign parents can approve changes",
+        "Payment, trust and regulatory rails differ fundamentally"
+      ],
+      "key_lesson": "A proven model is a hypothesis, not a plan. Rebuild the payment rail, trust mechanism and distribution - or the local copy wins.",
+      "tags": [
+        "copycat",
+        "local-competition",
+        "china",
+        "market-entry"
+      ],
+      "confidence": "high",
+      "source_type": "Venture industry analyses + company histories"
+    },
+    {
+      "id": "euro-disney-1992",
+      "name": "Disneyland Paris (Euro Disney)",
+      "region": "Europe",
+      "country": "France",
+      "era": "1992-1995 (crisis), 1995-present (recovery)",
+      "sector": "Tourism / theme parks",
+      "model": "Destination theme park + resort hotels, US operating playbook exported",
+      "outcome": "mixed",
+      "what_worked": "The park itself, the brand and the scale eventually worked: renamed Disneyland Paris, it became Europe's most visited theme park and the resort grew into a multi-park destination.",
+      "what_didnt": "At opening the US playbook was imposed almost unchanged: a no-alcohol policy the French found absurd, hotel pricing benchmarked to Florida rather than to European habits, French staff forced into rigid US service scripts, and a menu and park layout unsuited to European holiday lengths. Debt from over-building hotels produced losses approaching $1B by 1994 and a restructuring.",
+      "cultural_factors": [
+        "Meals with wine are a cultural norm, so the alcohol ban read as an insult rather than a policy",
+        "European holidays are longer and differently timed than US school calendars, so ticket and hotel pricing designed for Florida weekends misfired",
+        "French labour practice and public backlash to US corporate imposition made the staffing model contentious"
+      ],
+      "key_lesson": "Exporting an operating model into a different culture costs more than localising the menu: you must localise pricing, service ritual, staff relations and holiday assumptions together, or the locals will reject it on principle.",
+      "tags": [
+        "market-entry",
+        "localisation",
+        "tourism",
+        "service-culture",
+        "theme-parks"
+      ],
+      "confidence": "high",
+      "source_type": "Company filings + extensive business-school case literature"
+    },
+    {
+      "id": "saudi-cinema-reopening-2018",
+      "name": "Cinema reopening in Saudi Arabia",
+      "region": "Middle East",
+      "country": "Saudi Arabia",
+      "era": "2018-present",
+      "sector": "Tourism / entertainment",
+      "model": "Licensed operators (AMC, Vox) building cinema chains after a 35-year ban",
+      "outcome": "worked",
+      "what_worked": "The 2018 lifting of the cinema ban created an entire sector from zero as part of Vision 2030. Operators that moved fast with local partners captured a market with almost no legacy competition: purpose-built multiplexes, family-oriented screening times, and pricing in line with local entertainment spending. Demand in the first years was strong.",
+      "what_didnt": "Content censoring and release-delay requirements limited programming, and operators had to build everything (real estate, distribution, staff training) at once, which is capital-heavy and slow to break even.",
+      "cultural_factors": [
+        "High power distance and state-led reform mean the sector's timing is set by policy, not by market demand: being ready when the gate opens is the whole game",
+        "Family and gender norms shape scheduling, seating and format choices rather than following Western multiplex convention",
+        "Entertainment spending competes with hospitality traditions, so premium in-venue experience matters as much as the film"
+      ],
+      "key_lesson": "When regulation creates a brand-new market overnight, the winner is whoever already has the licence, the local partner and the site locked up - not whoever has the best product.",
+      "tags": [
+        "regulatory-opening",
+        "first-mover",
+        "tourism",
+        "saudi",
+        "licensing"
+      ],
+      "confidence": "medium",
+      "source_type": "Public reporting + operator disclosures on Saudi market entry"
+    }
+  ]
+}

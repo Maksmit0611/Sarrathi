@@ -1,0 +1,21 @@
+{
+  "_comment": "Copy to mcp.json and edit. Each server's tools appear to the agent as mcp__<name>__<tool>. Requires node/npx for the reference servers. Start the agent with --mcp.",
+  "servers": {
+    "memory": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-memory"]
+    },
+    "files": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-filesystem", "/home/YOURNAME/documents"]
+    },
+    "fetch": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-fetch"]
+    },
+    "git": {
+      "command": "uvx",
+      "args": ["mcp-server-git", "--repository", "/home/YOURNAME/sarathi-labs"]
+    }
+  }
+}
